@@ -1,0 +1,9 @@
+#!/usr/bin/python
+import sys 
+import json 
+
+string = 'data.txt'
+txt = open(string)
+j = json.loads( txt.read() ) 
+
+j['something'] = 2.4
