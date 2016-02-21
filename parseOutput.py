@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-def __main__():
+def getString():
 	f = open('output.txt', 'r')
 	transcriptions = []
 	words = []

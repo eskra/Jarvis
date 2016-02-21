@@ -21,3 +21,6 @@ def getDefinition(word):
 	data = initialize()
 	if word in data.keys():
 		print(data[word])
+	else:
+		print("I don't know what that means.\nCan you give me the definition in a full sentence?")
+
