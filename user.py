@@ -2,18 +2,17 @@ import json
 import os.path
 
 def validate_user(user):
-    f = open('user.txt','w+')
+    f = open('user.txt','r+')
 
     users = f.read().split('\n')
     if user in users:
-        return ("Hello"+user,user)
+        return ["Hello "+user,user]
     else:
 
         f.write(user+'\n')
         f.close()
 
-
-        path = 'C:/Users/Ajwad/PycharmProjects/untitled/' # change to final path later
+        path = '/Users/Eskra/Desktop/Jarvis/Jarvis' # change to final path later
 
         newuserfile=os.path.join(path,user+".json")
         f=open(newuserfile,"w+")
@@ -24,6 +23,4 @@ def validate_user(user):
         jsoncontent['diet']= None
         json.dump(jsoncontent,f)
 
-        return('Nice to meet you'+user,user)
-
-#validate_user('ajwad')
+        return('Nice to meet you '+user,user)

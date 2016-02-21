@@ -1,0 +1,153 @@
+(my_env) web010011:Jarvis Eskra$ pip install --upgrade pip
+Collecting pip
+  Using cached pip-8.0.2-py2.py3-none-any.whl
+Installing collected packages: pip
+  Found existing installation: pip 7.1.2
+    Uninstalling pip-7.1.2:
+      Successfully uninstalled pip-7.1.2
+Successfully installed pip-8.0.2
+(my_env) web010011:Jarvis Eskra$ pip install pyaudio==0.2.8
+Collecting pyaudio==0.2.8
+  Using cached pyaudio-0.2.8.tar.gz
+Installing collected packages: pyaudio
+  Running setup.py install for pyaudio ... error
+    Complete output from command /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/bin/python3 -u -c "import setuptools, tokenize;__file__='/private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-2d3q4kff/pyaudio/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-vt3lge_1-record/install-record.txt --single-version-externally-managed --compile --install-headers /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include/site/python3.5/pyaudio:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.macosx-10.6-intel-3.5
+    copying src/pyaudio.py -> build/lib.macosx-10.6-intel-3.5
+    running build_ext
+    building '_portaudio' extension
+    creating build/temp.macosx-10.6-intel-3.5
+    creating build/temp.macosx-10.6-intel-3.5/src
+    /usr/bin/clang -fno-strict-aliasing -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -arch i386 -arch x86_64 -g -DMACOSX=1 -I/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include -I/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m -c src/_portaudiomodule.c -o build/temp.macosx-10.6-intel-3.5/src/_portaudiomodule.o
+    src/_portaudiomodule.c:29:10: fatal error: 'portaudio.h' file not found
+    #include "portaudio.h"
+             ^
+    1 error generated.
+    error: command '/usr/bin/clang' failed with exit status 1
+    
+    ----------------------------------------
+Command "/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/bin/python3 -u -c "import setuptools, tokenize;__file__='/private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-2d3q4kff/pyaudio/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-vt3lge_1-record/install-record.txt --single-version-externally-managed --compile --install-headers /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include/site/python3.5/pyaudio" failed with error code 1 in /private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-2d3q4kff/pyaudio
+(my_env) web010011:Jarvis Eskra$ sudo pip install --allow-external pyaudio --allow-unverified pyaudio pyaudio
+DEPRECATION: --allow-external has been deprecated and will be removed in the future. Due to changes in the repository protocol, it no longer has any effect.
+DEPRECATION: --allow-unverified has been deprecated and will be removed in the future. Due to changes in the repository protocol, it no longer has any effect.
+The directory '/Users/Eskra/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/Eskra/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting pyaudio
+  Downloading PyAudio-0.2.9.tar.gz (289kB)
+    100% |████████████████████████████████| 290kB 962kB/s 
+Installing collected packages: pyaudio
+  Running setup.py install for pyaudio ... error
+    Complete output from command /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/bin/python3 -u -c "import setuptools, tokenize;__file__='/private/tmp/pip-build-k8aser2m/pyaudio/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-se35rrqm-record/install-record.txt --single-version-externally-managed --compile --install-headers /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include/site/python3.5/pyaudio:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.macosx-10.6-intel-3.5
+    copying src/pyaudio.py -> build/lib.macosx-10.6-intel-3.5
+    running build_ext
+    building '_portaudio' extension
+    creating build/temp.macosx-10.6-intel-3.5
+    creating build/temp.macosx-10.6-intel-3.5/src
+    /usr/bin/clang -fno-strict-aliasing -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -arch i386 -arch x86_64 -g -DMACOSX=1 -I/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include -I/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m -c src/_portaudiomodule.c -o build/temp.macosx-10.6-intel-3.5/src/_portaudiomodule.o
+    src/_portaudiomodule.c:29:10: fatal error: 'portaudio.h' file not found
+    #include "portaudio.h"
+             ^
+    1 error generated.
+    error: command '/usr/bin/clang' failed with exit status 1
+    
+    ----------------------------------------
+Command "/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/bin/python3 -u -c "import setuptools, tokenize;__file__='/private/tmp/pip-build-k8aser2m/pyaudio/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-se35rrqm-record/install-record.txt --single-version-externally-managed --compile --install-headers /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include/site/python3.5/pyaudio" failed with error code 1 in /private/tmp/pip-build-k8aser2m/pyaudio
+(my_env) web010011:Jarvis Eskra$ pip install --global-option='build_ext' --global-option='-I/usr/local/include' --global-option='-L/usr/local/lib' pyaudio
+/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/lib/python3.5/site-packages/pip/commands/install.py:180: UserWarning: Disabling all use of wheels due to the use of --build-options / --global-options / --install-options.
+  cmdoptions.check_install_build_global(options)
+Collecting pyaudio
+  Using cached PyAudio-0.2.9.tar.gz
+Installing collected packages: pyaudio
+  Running setup.py install for pyaudio ... done
+Successfully installed pyaudio-0.2.9
+(my_env) web010011:Jarvis Eskra$ pip freeze
+aiohttp==0.16.2
+appscript==1.0.1
+asyncio==3.4.3
+chardet==2.3.0
+PyAudio==0.2.9
+(my_env) web010011:Jarvis Eskra$ python3 jarvis.py
+Traceback (most recent call last):
+  File "nlu.py", line 23, in <module>
+    import speex
+ImportError: No module named 'speex'
+^[[A^[[A(my_env) web010011:Jarvis Eskra$ pip install -r requirements.txt
+Requirement already satisfied (use --upgrade to upgrade): aiohttp==0.16.2 in ./my_env/lib/python3.5/site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied (use --upgrade to upgrade): asyncio==3.4.3 in ./my_env/lib/python3.5/site-packages (from -r requirements.txt (line 2))
+Collecting pyaudio==0.2.8 (from -r requirements.txt (line 3))
+  Using cached pyaudio-0.2.8.tar.gz
+Collecting pyspeex from git+https://github.com/NuanceDev/pyspeex.git@0.9.0#egg=pyspeex (from -r requirements.txt (line 5))
+  Cloning https://github.com/NuanceDev/pyspeex.git (to 0.9.0) to /private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-fcrr3osn/pyspeex
+  Running setup.py (path:/private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-fcrr3osn/pyspeex/setup.py) egg_info for package pyspeex produced metadata for project name speex. Fix your #egg=pyspeex fragments.
+Requirement already satisfied (use --upgrade to upgrade): chardet in ./my_env/lib/python3.5/site-packages (from aiohttp==0.16.2->-r requirements.txt (line 1))
+Installing collected packages: pyaudio, speex
+  Found existing installation: PyAudio 0.2.9
+    Uninstalling PyAudio-0.2.9:
+      Successfully uninstalled PyAudio-0.2.9
+  Running setup.py install for pyaudio ... error
+    Complete output from command /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/bin/python3 -u -c "import setuptools, tokenize;__file__='/private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-fcrr3osn/pyaudio/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-hk71b9u3-record/install-record.txt --single-version-externally-managed --compile --install-headers /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include/site/python3.5/pyaudio:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.macosx-10.6-intel-3.5
+    copying src/pyaudio.py -> build/lib.macosx-10.6-intel-3.5
+    running build_ext
+    building '_portaudio' extension
+    creating build/temp.macosx-10.6-intel-3.5
+    creating build/temp.macosx-10.6-intel-3.5/src
+    /usr/bin/clang -fno-strict-aliasing -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -arch i386 -arch x86_64 -g -DMACOSX=1 -I/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include -I/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m -c src/_portaudiomodule.c -o build/temp.macosx-10.6-intel-3.5/src/_portaudiomodule.o
+    src/_portaudiomodule.c:29:10: fatal error: 'portaudio.h' file not found
+    #include "portaudio.h"
+             ^
+    1 error generated.
+    error: command '/usr/bin/clang' failed with exit status 1
+    
+    ----------------------------------------
+  Rolling back uninstall of PyAudio
+Command "/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/bin/python3 -u -c "import setuptools, tokenize;__file__='/private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-fcrr3osn/pyaudio/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-hk71b9u3-record/install-record.txt --single-version-externally-managed --compile --install-headers /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include/site/python3.5/pyaudio" failed with error code 1 in /private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-fcrr3osn/pyaudio
+(my_env) web010011:Jarvis Eskra$ pip install --global-option='build_ext' --global-option='-I/usr/local/include' --global-option='-L/usr/local/lib' pyaudio
+/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/lib/python3.5/site-packages/pip/commands/install.py:180: UserWarning: Disabling all use of wheels due to the use of --build-options / --global-options / --install-options.
+  cmdoptions.check_install_build_global(options)
+Requirement already satisfied (use --upgrade to upgrade): pyaudio in ./my_env/lib/python3.5/site-packages
+(my_env) web010011:Jarvis Eskra$ pip install git+https://github.com/NuanceDev/pyspeex.git@0.9.0#egg=pyspeex
+Collecting pyspeex from git+https://github.com/NuanceDev/pyspeex.git@0.9.0#egg=pyspeex
+  Cloning https://github.com/NuanceDev/pyspeex.git (to 0.9.0) to /private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-z0z8i72w/pyspeex
+  Running setup.py (path:/private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-z0z8i72w/pyspeex/setup.py) egg_info for package pyspeex produced metadata for project name speex. Fix your #egg=pyspeex fragments.
+Installing collected packages: speex
+  Running setup.py install for speex ... error
+    Complete output from command /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/bin/python3 -u -c "import setuptools, tokenize;__file__='/private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-z0z8i72w/pyspeex/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-mge8zyu9-record/install-record.txt --single-version-externally-managed --compile --install-headers /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include/site/python3.5/speex:
+    running install
+    running build
+    running build_ext
+    building 'speex' extension
+    creating build
+    creating build/temp.macosx-10.6-intel-3.5
+    /usr/bin/clang -fno-strict-aliasing -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -arch i386 -arch x86_64 -g -I/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include -I/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m -c speex.c -o build/temp.macosx-10.6-intel-3.5/speex.o
+    speex.c:343:10: fatal error: 'speex/speex_types.h' file not found
+    #include "speex/speex_types.h"
+             ^
+    1 error generated.
+    error: command '/usr/bin/clang' failed with exit status 1
+    
+    ----------------------------------------
+Command "/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/bin/python3 -u -c "import setuptools, tokenize;__file__='/private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-z0z8i72w/pyspeex/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-mge8zyu9-record/install-record.txt --single-version-externally-managed --compile --install-headers /Users/Eskra/Desktop/Jarvis/Jarvis/my_env/include/site/python3.5/speex" failed with error code 1 in /private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-z0z8i72w/pyspeex
+(my_env) web010011:Jarvis Eskra$ pip install --global-option='build_ext' --global-option='-I/usr/local/include' --global-option='-L/usr/local/lib' git+https://github.com/NuanceDev/pyspeex.git@0.9.0#egg=pyspeex
+/Users/Eskra/Desktop/Jarvis/Jarvis/my_env/lib/python3.5/site-packages/pip/commands/install.py:180: UserWarning: Disabling all use of wheels due to the use of --build-options / --global-options / --install-options.
+  cmdoptions.check_install_build_global(options)
+Collecting pyspeex from git+https://github.com/NuanceDev/pyspeex.git@0.9.0#egg=pyspeex
+  Cloning https://github.com/NuanceDev/pyspeex.git (to 0.9.0) to /private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-tzzxlypb/pyspeex
+  Running setup.py (path:/private/var/folders/4z/sbkyp6ss6hs9t79sr3ps2cv80000gn/T/pip-build-tzzxlypb/pyspeex/setup.py) egg_info for package pyspeex produced metadata for project name speex. Fix your #egg=pyspeex fragments.
+Installing collected packages: speex
+  Running setup.py install for speex ... done
+Successfully installed speex-0.0.0
+(my_env) web010011:Jarvis Eskra$ python3 jarv

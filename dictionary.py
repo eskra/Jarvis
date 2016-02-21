@@ -6,6 +6,7 @@ def initialize():
 	data = json.load(f)
 	new_data = dict()
 	for i in data.keys():
+		print(i)
 		new_data[str(i)] = str(data[i])
 	f.close()
 	return new_data
@@ -14,7 +15,7 @@ def addDefinition(word, definition):
 	data = initialize()
 	data[word] = definition
 	f = open("dictionary.json", "w")
-	f.write(str(data))
+	f.write(json.dumps(data))
 	f.close()
 
 def getDefinition(word):

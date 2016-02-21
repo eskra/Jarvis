@@ -8,16 +8,13 @@ def getString():
 
 	for line in f:
 		if '\'transcriptions\':' in line:
-		#if line.startswith('\'transcriptions\':'):
 			transcriptions = line.split('\'')
-			final_transcription = transcriptions[-2]
+			final_transcription = transcriptions[3]
 
 		if '\'words\':' in line:
-		#if line.startswith('\'words\':'):
 			while not line.startswith("<<<<"):
 				words.append(line)
 				line = f.readline()
 
 	return final_transcription
-	# print(final_transcription)
-	# print(words)
+

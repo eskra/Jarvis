@@ -14,6 +14,7 @@ import sys
 import urllib.parse
 import time
 from appscript import app
+import appscript
 
 import aiohttp
 from aiohttp import websocket
@@ -299,7 +300,7 @@ def understand_audio(loop, url, app_id, app_key, context_tag=None, recorder=None
     #f = open('debug.raw', 'wb')
     #fr = open('pre.raw', 'wb')
     #while not keytask.done():
-    t_end = time.time() + 10
+    t_end = time.time() + 5
     while True:
 
         if time.time() >= t_end:
@@ -534,6 +535,7 @@ def main():
                 context_tag=credentials['context_tag'],
                 recorder=recorder))
 
-
 if __name__ == '__main__':
     main()
+
+
