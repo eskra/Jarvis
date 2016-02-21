@@ -1,0 +1,158 @@
+>>>>
+2016-02-20 22:25:25.027504
+{'codec': 'audio/x-speex;mode=wb',
+ 'device_id': '55555500000000000000000000000000',
+ 'message': 'connect'}
+
+<<<<
+2016-02-20 22:25:25.186239
+{'message': 'connected', 'session_id': 'f092e666bc6f4618b44e556af75930d7'}
+
+>>>>
+2016-02-20 22:25:25.186403
+{'command': 'NDSP_ASR_APP_CMD',
+ 'context_tag': 'M1737_A925_V4',
+ 'language': 'eng-USA',
+ 'message': 'query_begin',
+ 'transaction_id': 123}
+
+>>>>
+2016-02-20 22:25:25.186887
+{'audio_id': 456,
+ 'message': 'query_parameter',
+ 'parameter_name': 'AUDIO_INFO',
+ 'parameter_type': 'audio',
+ 'transaction_id': 123}
+
+>>>>
+2016-02-20 22:25:25.187231
+{'message': 'query_end', 'transaction_id': 123}
+
+>>>>
+2016-02-20 22:25:25.187345
+{'audio_id': 456, 'message': 'audio'}
+
+Recording, press any key to stop...
+>>>>
+2016-02-20 22:25:35.272091
+{'audio_id': 456, 'message': 'audio_end'}
+
+<<<<
+2016-02-20 22:25:35.705704
+{'NMAS_PRFX_SESSION_ID': 'f092e666-bc6f-4618-b44e-556af75930d7',
+ 'NMAS_PRFX_TRANSACTION_ID': '123',
+ 'audio_transfer_info': {'audio_id': 456,
+                         'end_time': '20160221032534265',
+                         'nss_server': '172.16.59.229:4501',
+                         'packages': [{'bytes': 640,
+                                       'time': '20160221032524341'},
+                                      {'bytes': 640,
+                                       'time': '20160221032534145'}],
+                         'start_time': '20160221032524197'},
+ 'cadence_regulatable_result': 'completeRecognition',
+ 'confidences': [174, 0, 0],
+ 'final_response': 0,
+ 'message': 'query_response',
+ 'prompt': '',
+ 'result_format': 'rec_text_results',
+ 'result_type': 'NDSP_ASR_APP_CMD',
+ 'status_code': 0,
+ 'transaction_id': 123,
+ 'transcriptions': ['I like Jazz I like jazz music like music I like jazz '
+                    'music',
+                    'I like Jazz I like jazz music like music I like Jazz '
+                    'music',
+                    'I like Jazz I like Jazz music like music I like jazz '
+                    'music'],
+ 'words': [[{'confidence': '0.819', 'word': 'I\\*no-space-before'},
+            {'confidence': '0.914', 'word': 'like'},
+            {'confidence': '0.853', 'word': 'Jazz'},
+            {'confidence': '0.884', 'word': 'I'},
+            {'confidence': '0.891', 'word': 'like'},
+            {'confidence': '0.77', 'word': 'jazz'},
+            {'confidence': '0.913', 'word': 'music'},
+            {'confidence': '0.495', 'word': 'like'},
+            {'confidence': '0.852', 'word': 'music'},
+            {'confidence': '0.914', 'word': 'I'},
+            {'confidence': '0.926', 'word': 'like'},
+            {'confidence': '0.791', 'word': 'jazz'},
+            {'confidence': '0.982', 'word': 'music'}],
+           [{'confidence': '0.0', 'word': 'I\\*no-space-before'},
+            {'confidence': '0.0', 'word': 'like'},
+            {'confidence': '0.0', 'word': 'Jazz'},
+            {'confidence': '0.0', 'word': 'I'},
+            {'confidence': '0.0', 'word': 'like'},
+            {'confidence': '0.0', 'word': 'jazz'},
+            {'confidence': '0.0', 'word': 'music'},
+            {'confidence': '0.0', 'word': 'like'},
+            {'confidence': '0.0', 'word': 'music'},
+            {'confidence': '0.0', 'word': 'I'},
+            {'confidence': '0.0', 'word': 'like'},
+            {'confidence': '0.0', 'word': 'Jazz'},
+            {'confidence': '0.0', 'word': 'music'}],
+           [{'confidence': '0.0', 'word': 'I\\*no-space-before'},
+            {'confidence': '0.0', 'word': 'like'},
+            {'confidence': '0.0', 'word': 'Jazz'},
+            {'confidence': '0.0', 'word': 'I'},
+            {'confidence': '0.0', 'word': 'like'},
+            {'confidence': '0.0', 'word': 'Jazz'},
+            {'confidence': '0.0', 'word': 'music'},
+            {'confidence': '0.0', 'word': 'like'},
+            {'confidence': '0.0', 'word': 'music'},
+            {'confidence': '0.0', 'word': 'I'},
+            {'confidence': '0.0', 'word': 'like'},
+            {'confidence': '0.0', 'word': 'jazz'},
+            {'confidence': '0.0', 'word': 'music'}]]}
+
+<<<<
+2016-02-20 22:25:36.116681
+{'NMAS_PRFX_SESSION_ID': 'f092e666-bc6f-4618-b44e-556af75930d7',
+ 'NMAS_PRFX_TRANSACTION_ID': '123',
+ 'audio_transfer_info': {'audio_id': 456,
+                         'end_time': '20160221032534265',
+                         'nss_server': '172.16.59.229:4501',
+                         'packages': [{'bytes': 640,
+                                       'time': '20160221032524341'},
+                                      {'bytes': 640,
+                                       'time': '20160221032534145'}],
+                         'start_time': '20160221032524197'},
+ 'cadence_regulatable_result': 'completeRecognition',
+ 'final_response': 1,
+ 'message': 'query_response',
+ 'nlu_interpretation_results': {'final_response': 1,
+                                'payload': {'diagnostic_info': {'context_tag': 'M1737_A925_V4',
+                                                                'nlu_language': 'eng-USA',
+                                                                'nlu_version': '[Version: '
+                                                                               'nlps-eng-USA-QUICKNLU;Label;1737_NLPS_4;Model;dcfd4830-d82e-11e5-824d-5b5425ac59c1;Build;21a7e802-d830-11e5-824d-91c85a480012;CreatedAt;2016-02-21T00:14:36.000Z]',
+                                                                'nmaid': 'NMDPTRIAL_est_ugolini_gmail_com20160220155118',
+                                                                'timing': {'finalRespSentDelay': '383',
+                                                                           'intermediateRespSentDelay': '269'}},
+                                            'interpretations': [{'action': {'intent': {'confidence': 1.0,
+                                                                                       'value': 'NO_MATCH'}},
+                                                                 'literal': 'I '
+                                                                            'like '
+                                                                            'Jazz '
+                                                                            'I '
+                                                                            'like '
+                                                                            'jazz '
+                                                                            'music '
+                                                                            'like '
+                                                                            'music '
+                                                                            'I '
+                                                                            'like '
+                                                                            'jazz '
+                                                                            'music'}],
+                                            'type': 'nlu-1.0'},
+                                'payload_format': 'nlu-base',
+                                'payload_version': '1.0',
+                                'status': 'success'},
+ 'prompt': '',
+ 'result_format': 'nlu_interpretation_results',
+ 'result_type': 'NDSP_ASR_APP_CMD',
+ 'status_code': 0,
+ 'transaction_id': 123}
+
+<<<<
+2016-02-20 22:25:36.122387
+{'message': 'query_end', 'transaction_id': 123}
+
