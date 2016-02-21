@@ -1,27 +1,29 @@
 import json
+import os.path
 
 def validate_user(user):
-    f = open('user.txt', 'r+')
+    f = open('user.txt','w+')
 
     users = f.read().split('\n')
     if user in users:
-        return 'Hello ' + user
+        return ("Hello"+user,user)
     else:
-        f.write(user + '\n')
 
-        #Check if user wants to set preferences
-        preferences = True
-        
-        if preferences:
-            preferences(user)
-        
-        return ('Nice to meet you ' + user)
+        f.write(user+'\n')
+        f.close()
 
-    f.close()
 
-def preferences(user, preference, setPreference):
-    f = open(user + '.json', 'w+')
+        path = 'C:/Users/Ajwad/PycharmProjects/untitled/' # change to final path later
 
-    my_dict = json.load(f)    
-    mydict[preference] = setPreference
-    json.dump(my_dict, f)
+        newuserfile=os.path.join(path,user+".json")
+        f=open(newuserfile,"w+")
+        jsoncontent= dict()
+        jsoncontent['user']=user
+        jsoncontent['music']=None
+        jsoncontent['travel']=None
+        jsoncontent['diet']= None
+        json.dump(jsoncontent,f)
+
+        return('Nice to meet you'+user,user)
+
+#validate_user('ajwad')
