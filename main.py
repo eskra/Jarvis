@@ -12,11 +12,11 @@ def goto(linenum):
 	global line
 	line = linenum
 
-def findName(line):
-	if line[0:19] == "you are speaking to":
-		return line[20:40]
-	else: 
-		return "e1"
+# def findName(line):
+# 	if line[0:19] == "you are speaking to":
+# 		return line[20:40]
+# 	else: 
+# 		return "e1"
 
 def readLine(line):
 	for word in line.split():
@@ -28,8 +28,8 @@ def readLine(line):
 
 while True:
 	string = raw_input("hi Tommy, what do you want to know about me? \n")
-	if findName(string) != "e1":
-		print "hello " + findName(string)
+	# if findName(string) != "e1":
+	# 	print "hello " + findName(string)
 	if readLine(string) == "error":
 		print("you don't make any sense... \n")
 	else:
