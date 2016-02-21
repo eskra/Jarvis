@@ -18,33 +18,30 @@ import os
 
 # string will be the user input coming from the asr done by esther
 keywords = {"travel","diet","movie","music"}
+introduction = {"you are speaking to","i am","i'm"}
 
 def nlu(string):
 	# users
-	if "you are speaking to" in string:
-		return string.split("you are speaking to")[-1].lstrip(" ")
+	for intro in introduction:
+		if intro in string.lower():
+			return ("user.py", string.lower().split(intro)[-1].lstrip(" "))
 	# preferences
 	for key in keywords:
-		if key in string:
+		if key in string.lower():
 			return key
 	# tasks
 	if "do you know" in string:
-		return string.split("do you know")[-1].lstrip(" ")
+		return string.lower().split("do you know")[-1].lstrip(" ")
 	# add definition
-	if "means" in string: 
-		data = string.split("means")
+	if "means" in string.lower(): 
+		data = string.lower().split("means")
 		word = data[0].lstrip(" ")
 		definition = data[-1].lstrip(" ")
-		return (word, definition)
+		return ("addDefinition", word, definition)
 	# get definition
-	if "mean" in string:
-		data = string.split(" ")
+	if "mean" in string.lower():
+		data = string.lower().split(" ")
 		word = data[-2]
-		return word
-
-
-while True:		
-	string = raw_input("please enter your input \n")
-	print(nlu(string))
+		return ("getDefinition", word)
 
 
