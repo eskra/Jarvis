@@ -1,0 +1,106 @@
+>>>>
+2016-02-20 21:32:00.791312
+{'codec': 'audio/x-speex;mode=wb',
+ 'device_id': '55555500000000000000000000000000',
+ 'message': 'connect'}
+
+<<<<
+2016-02-20 21:32:00.957080
+{'message': 'connected', 'session_id': 'c55c5c8d10514102931e89ab05a92828'}
+
+>>>>
+2016-02-20 21:32:00.957311
+{'command': 'NDSP_ASR_APP_CMD',
+ 'context_tag': 'M1737_A925_V4',
+ 'language': 'eng-USA',
+ 'message': 'query_begin',
+ 'transaction_id': 123}
+
+>>>>
+2016-02-20 21:32:00.957718
+{'audio_id': 456,
+ 'message': 'query_parameter',
+ 'parameter_name': 'AUDIO_INFO',
+ 'parameter_type': 'audio',
+ 'transaction_id': 123}
+
+>>>>
+2016-02-20 21:32:00.957998
+{'message': 'query_end', 'transaction_id': 123}
+
+>>>>
+2016-02-20 21:32:00.958092
+{'audio_id': 456, 'message': 'audio'}
+
+Recording, press any key to stop...
+>>>>
+2016-02-20 21:32:11.036002
+{'audio_id': 456, 'message': 'audio_end'}
+
+<<<<
+2016-02-20 21:32:11.446022
+{'NMAS_PRFX_SESSION_ID': 'c55c5c8d-1051-4102-931e-89ab05a92828',
+ 'NMAS_PRFX_TRANSACTION_ID': '123',
+ 'audio_transfer_info': {'audio_id': 456,
+                         'end_time': '20160221023210069',
+                         'nss_server': '172.16.59.226:4520',
+                         'packages': [{'bytes': 640,
+                                       'time': '20160221023200153'},
+                                      {'bytes': 640,
+                                       'time': '20160221023209967'}],
+                         'start_time': '20160221023200012'},
+ 'cadence_regulatable_result': 'completeRecognition',
+ 'confidences': [868, 0],
+ 'final_response': 0,
+ 'message': 'query_response',
+ 'prompt': '',
+ 'result_format': 'rec_text_results',
+ 'result_type': 'NDSP_ASR_APP_CMD',
+ 'status_code': 0,
+ 'transaction_id': 123,
+ 'transcriptions': ['Hello hello', 'Hello'],
+ 'words': [[{'confidence': '0.977', 'word': 'Hello\\*no-space-before'},
+            {'confidence': '0.833', 'word': 'hello'}],
+           [{'confidence': '0.0', 'word': 'Hello\\*no-space-before'}]]}
+
+<<<<
+2016-02-20 21:32:11.509209
+{'NMAS_PRFX_SESSION_ID': 'c55c5c8d-1051-4102-931e-89ab05a92828',
+ 'NMAS_PRFX_TRANSACTION_ID': '123',
+ 'audio_transfer_info': {'audio_id': 456,
+                         'end_time': '20160221023210069',
+                         'nss_server': '172.16.59.226:4520',
+                         'packages': [{'bytes': 640,
+                                       'time': '20160221023200153'},
+                                      {'bytes': 640,
+                                       'time': '20160221023209967'}],
+                         'start_time': '20160221023200012'},
+ 'cadence_regulatable_result': 'completeRecognition',
+ 'final_response': 1,
+ 'message': 'query_response',
+ 'nlu_interpretation_results': {'final_response': 1,
+                                'payload': {'diagnostic_info': {'context_tag': 'M1737_A925_V4',
+                                                                'nlu_language': 'eng-USA',
+                                                                'nlu_version': '[Version: '
+                                                                               'nlps-eng-USA-QUICKNLU;Label;1737_NLPS_4;Model;dcfd4830-d82e-11e5-824d-5b5425ac59c1;Build;21a7e802-d830-11e5-824d-91c85a480012;CreatedAt;2016-02-21T00:14:36.000Z]',
+                                                                'nmaid': 'NMDPTRIAL_est_ugolini_gmail_com20160220155118',
+                                                                'timing': {'finalRespSentDelay': '155',
+                                                                           'intermediateRespSentDelay': '235'}},
+                                            'interpretations': [{'action': {'intent': {'confidence': 1.0,
+                                                                                       'value': 'NO_MATCH'}},
+                                                                 'literal': 'Hello '
+                                                                            'hello'}],
+                                            'type': 'nlu-1.0'},
+                                'payload_format': 'nlu-base',
+                                'payload_version': '1.0',
+                                'status': 'success'},
+ 'prompt': '',
+ 'result_format': 'nlu_interpretation_results',
+ 'result_type': 'NDSP_ASR_APP_CMD',
+ 'status_code': 0,
+ 'transaction_id': 123}
+
+<<<<
+2016-02-20 21:32:11.513960
+{'message': 'query_end', 'transaction_id': 123}
+
