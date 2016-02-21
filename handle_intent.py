@@ -18,5 +18,9 @@ def mainFunc():
 	if result[0] == "getDefinition":
 		dictionary.getDefinition(result[1])
 	#if result[0] == 
+	if result[0] == "preferenceAnalysis.py"
+		# blah blah need ajwad's help 
 
 mainFunc()
+	
+	

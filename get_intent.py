@@ -7,6 +7,7 @@ import appscript
 
 keywords = {"travel","diet","movie","music"}
 introduction = {"you are speaking to","i am","i'm","my name is"}
+travel_keywords = {"I want a nice surprise trip", "travel", "go"}
 
 def nlu(string):
 	# users
@@ -32,6 +33,10 @@ def nlu(string):
 		word = data[-2]
 		print("getDefinition", word)
 		return ("getDefinition", word)
+	#trip
+	for key in travel_keywords:
+		if key in string:
+			return ("preferenceAnalysis.py" , "I want a nice surprise trip")
 
 
 
