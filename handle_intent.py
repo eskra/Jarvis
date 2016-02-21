@@ -15,4 +15,6 @@ while True:
 		definition.addDefinition(result[1], result[2])
 	if result[0] == "getDefinition":
 		definition.getDefinition(result[1])
-	#if result[0] == 
+	if result[0] == "preferenceAnalysis.py"
+		# blah blah need ajwad's help 
+	

@@ -19,6 +19,8 @@ import os
 # string will be the user input coming from the asr done by esther
 keywords = {"travel","diet","movie","music"}
 introduction = {"you are speaking to","i am","i'm"}
+travel_keywords = {"I want a nice surprise trip", "travel", "go"}
+
 
 def nlu(string):
 	# users
@@ -43,5 +45,9 @@ def nlu(string):
 		data = string.lower().split(" ")
 		word = data[-2]
 		return ("getDefinition", word)
+	#trip
+	for key in travel_keywords:
+		if key in string:
+			return ("preferenceAnalysis.py" , "I want a nice surprise trip")
 
 
